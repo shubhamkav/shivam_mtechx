@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Support AI</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="app-container">
+
+    <!-- Chat Card -->
+    <section class="chat-container" aria-label="Customer Support AI Chat">
+
+      <!-- Header -->
+      <header class="chat-header">
+        <div class="header-left">
+          <div class="bot-avatar">🤖</div>
+          <div>
+            <h1>Customer Support AI</h1>
+            <span class="status online">Online • Emotion Aware</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Messages -->
+      <div id="chat-box" class="chat-box" role="log" aria-live="polite">
+        <div class="message bot">
+          <div class="bubble">
+            👋 Hello! I’m your AI support assistant.  
+            How can I help you today?
+          </div>
+        </div>
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="typing-indicator" class="typing hidden">
+        <span></span><span></span><span></span>
+        <small>AI is typing...</small>
+      </div>
+
+      <!-- Input -->
+      <footer class="chat-input">
+        <label for="user-input" class="sr-only">Message</label>
+
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type your message here..."
+          autocomplete="off"
+          aria-label="Message input"
+        />
+
+        <button
+          id="send-btn"
+          onclick="sendMessage()"
+          aria-label="Send message"
+        >
+          ➤
+        </button>
+      </footer>
+
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

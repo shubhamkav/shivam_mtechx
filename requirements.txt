@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+
+# ML / NLP
+torch
+numpy
+pandas
+
+# Utilities
+scikit-learn
